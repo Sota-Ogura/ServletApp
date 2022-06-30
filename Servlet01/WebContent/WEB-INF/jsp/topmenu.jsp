@@ -10,10 +10,10 @@
 	<h1>企業検索システム</h1>
 	<img src="image/topmenu_icon.png">
 	<form action="u_login.java">
-		<button type="submit">利用者</button>
+		<button type="submit" value="user">利用者</button>
 	</form>
 	<form action="a_login.java">
-		<button type="submit">管理者</button>
+		<button type="submit" value="admin">管理者</button>
 	</form>
 </body>
 </html>

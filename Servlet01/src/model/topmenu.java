@@ -20,9 +20,22 @@ public class topmenu extends HttpServlet {
 		dispatcher.forward(request, response);
 	}
 
-
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	request.setCharacterEncoding("UTF-8");
+			String user = request.getParameter("user");
+			String admin = request.getParameter("admin");
 
+			String path=null;
+
+			if( user != null ) {
+				path = "WEB-INF/jsp/u_login.jsp";
+			}else {
+				path = "WEB-INF/jsp/a_login.jsp";
+			}
+
+			RequestDispatcher dispatcher =
+					request.getRequestDispatcher(path);
+			dispatcher.forward(request, response);
 	}
 
 }

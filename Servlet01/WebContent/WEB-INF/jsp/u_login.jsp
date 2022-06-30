@@ -8,6 +8,14 @@
 </head>
 <body>
 	<h1>利用者ログイン</h1>
-	
+	<form action="" method="">
+		利用者ID<br>
+		<img src="image/u_login_icon.png">
+		<input type="text" name="id"><br>
+		<img src="image/u/login_icon2.png">
+		<input type="password" name="pass"><br>
+
+	</form>
+
 </body>
 </html>
