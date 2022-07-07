@@ -1,5 +1,4 @@
-package model;
-
+package Servlet;
 
 import java.io.IOException;
 
@@ -11,32 +10,31 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 
-@WebServlet("/topmenu")
-public class topmenu extends HttpServlet {
+@WebServlet("/u_entry_2")
+public class u_entry_2 extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-
+    
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String user = request.getParameter("user");
+		String admin = request.getParameter("admin");
+
+		String path=null;
+
+		if( user != null ) {
+			path = "WEB-INF/jsp/u_login.jsp";
+		}else {
+			path = "WEB-INF/jsp/a_login.jsp";
+		}
+
 		RequestDispatcher dispatcher =
-				request.getRequestDispatcher("WEB-INF/jsp/topmenu.jsp");
+				request.getRequestDispatcher(path);
 		dispatcher.forward(request, response);
+				
 	}
 
+	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-	request.setCharacterEncoding("UTF-8");
-			String user = request.getParameter("user");
-			String admin = request.getParameter("admin");
-
-			String path=null;
-
-			if( user != null ) {
-				path = "WEB-INF/jsp/u_login.jsp";
-			}else {
-				path = "WEB-INF/jsp/a_login.jsp";
-			}
-
-			RequestDispatcher dispatcher =
-					request.getRequestDispatcher(path);
-			dispatcher.forward(request, response);
+		
 	}
 
 }

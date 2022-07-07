@@ -8,7 +8,7 @@
 </head>
 <body>
 	<h1>利用者ログイン</h1>
-	<form action="" method="">
+	<form action="Servlet/u_menu.java" method="get">
 		利用者ID<br>
 		<img src="image/u_login_icon.png">
 		<input type="text" name="id"><br>
