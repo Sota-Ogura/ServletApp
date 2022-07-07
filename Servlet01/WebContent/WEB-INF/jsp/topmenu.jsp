@@ -8,12 +8,12 @@
 </head>
 <body>
 	<h1>企業検索システム</h1>
-	<img src="image/topmenu_icon.png">
-	<form action="topmenu" method="post">
-		<button type="submit" name="user" value="user">利用者</button>
-	</form>
-	<form action="topmenu" method="post">
-		<button type="submit" value="admin">管理者</button>
-	</form>
-</body>
+	<img src="image/topmenu_icon.png"><br>
+	<a href="u_loginServlet">
+		<button type="submit">利用者</button>
+	</a><br>
+	<a href="a_loginServlet">
+		<button type="submit">管理者</button>
+	</a>
+	</body>
 </html>
