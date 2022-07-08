@@ -13,11 +13,11 @@
       <img src="image/u_login_icon.png">
       <input type="text" name="id" required><br>
       パスワード<br>
-      <p>※PASSWDは難しいものを
+      <p>※PASSWDは難しいものを<br>
       <img src="image/u_login_icon2.png">
       <input type="password" name="pw" required><br>
       パスワード確認<br>
-      <img src="image/u_login_icon.png">
+      <img src="image/u_login_icon2.png">
       <input type="password" name="check" required><br>
       <input type="submit" value="登録する"><a href="Servlet01/u_login.jsp">キャンセル</a>
      </form>

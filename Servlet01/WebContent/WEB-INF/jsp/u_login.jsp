@@ -12,7 +12,7 @@
 		利用者ID<br>
 		<img src="image/u_login_icon.png">
 		<input type="text" name="id"><br>
-		<img src="image/u/login_icon2.png">
+		<img src="image/u_login_icon2.png">
 		<input type="password" name="pass"><br>
 		<button type="submit">送信</button>
 	</form>
