@@ -13,7 +13,7 @@
 		<h1>ログインに失敗しました。</h1>
 		<p>処理に問題が発生しました。</p>
 		<p>お手数ですが、再度お試しください。</p>
-		<form action="Servlet01/topmenu.java" method="get">
+		<form action="topmenuServlet" method="get">
 			<button type="submit">戻る</button>
 		</form>
 	</div>

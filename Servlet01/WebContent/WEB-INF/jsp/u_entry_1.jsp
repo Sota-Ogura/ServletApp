@@ -19,7 +19,8 @@
       パスワード確認<br>
       <img src="image/u_login_icon2.png">
       <input type="password" name="check" required><br>
-      <input type="submit" value="登録する"><a href="Servlet01/u_login.jsp">キャンセル</a>
+      <input type="submit" value="登録する">
+      <a href="u_loginServlet">キャンセル</a>
      </form>
 </body>
 </html>
