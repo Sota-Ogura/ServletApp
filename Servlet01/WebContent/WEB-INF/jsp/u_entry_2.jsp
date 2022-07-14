@@ -12,9 +12,10 @@
 </head>
 <body>
      <h2>一度登録すると変更はできません。よろしいですか。</h2><br>
+     <form action="u_entry_3" method="post">
      ID<%= account.getId() %><br>
      パスワード<%= account.getPass() %>
-     <a href="/WEB-INF/jsp/u_entry_1.jsp"></a>
-     <a href="Servlet01/u_entry_1.java?action=go"></a>
+     </form>
+     <a href="u_loginServlet">戻る</a>
 </body>
 </html>

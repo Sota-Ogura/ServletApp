@@ -8,7 +8,7 @@
 </head>
 <body>
        <h1>ユーザ新規登録</h1>
-     <form action="" method="post">
+     <form action="u_entry_2" method="post">
       ID<br>
       <img src="image/u_login_icon.png">
       <input type="text" name="id" required><br>
