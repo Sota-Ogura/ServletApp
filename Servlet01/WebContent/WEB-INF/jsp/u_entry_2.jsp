@@ -15,6 +15,7 @@
      <form action="u_entry_3" method="post">
      ID<%= account.getId() %><br>
      パスワード<%= account.getPass() %>
+	 <input type="submit" value="登録">
      </form>
      <a href="u_loginServlet">戻る</a>
 </body>
