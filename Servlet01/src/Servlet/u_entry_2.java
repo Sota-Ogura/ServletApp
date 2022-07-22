@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import DAO.SignupDAO;
 import scopedata.Account;
 
 
@@ -27,6 +28,10 @@ public class u_entry_2 extends HttpServlet {
 		HttpSession session = request.getSession();
 		Account account = new Account( id , pw );
 		session.setAttribute( "LoginUser" , account );
+
+
+		SignupDAO dao = new SignupDAO();
+		dao.execte(id,pw);
 
 		RequestDispatcher dispatcher =
 				request.getRequestDispatcher("WEB-INF/jsp/u_entry_2.jsp");
